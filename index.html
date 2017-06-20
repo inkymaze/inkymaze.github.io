@@ -62,6 +62,36 @@
           </ol>
     </section>
 
+    <section id ="Reviews">
+      <form action="/reviews" method="post">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name">
+
+        <label for="rating">Rating</label>
+        <input type="radio" name="rating" value="1" checked>
+        <input type="radio" name="rating" value="2">
+        <input type="radio" name="rating" value="3">
+        <input type="radio" name="rating" value="4">
+        <input type="radio" name="rating" value="5">
+
+        <select id="expertise" name="Expertise">
+          <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Expertise</option>
+
+          <option value="Sometimes Cook">Sometimes Cook</option>
+          <option value="Cook Everyday">Cook Everyday</option>
+          <option value="Cooking is a Hobby">Coooking is a Hobby</option>
+          <option value="Professional Chef">Professional Chef</option>
+
+        </select>
+
+        <label>Review
+          <textarea name="review" cols="20" rows="20"></textarea>
+        </label>
+
+        <input type="submit" value="Submit Review"
+      </form>
+    </section>
+
 
     <footer>
         <p>Orignal recipes from: Mario Batali, Chad Robertson, Joanne Chang</p>
