@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nick's Recipe</title>
+    <meta name="description" content="Simple recipe for a great dinner.">
+<meta charset="utf-8">
+<link rel="stylesheet" href="./css_custom_reset.css" type="text/css"/>
+<link rel="stylesheet" href="./box_model.css" type="text/css"/>
+<script src="./external_javascript_example.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <header>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Appacademylogo.png/175px-Appacademylogo.png"/>
+      <nav>
+        <ul>
+          <li><a href="#description">Description</a></li>
+          <li><a href="#ingredients">Ingredients</a></li>
+          <li><a href="#directions">Directions</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside>
+      <h2> Ingredients </h2>
+
+      <ul class="ingredients-list">
+        <li>Flour</li>
+        <li>Salt</li>
+        <li>Eggs</li>
+        <li>Cream</li>
+        <li>Baking Powder</li>
+        <li>Pancetta</li>
+        <li>Celery</li>
+        <li>Carrot</li>
+        <li>Milk</li>
+        <li>Sugar</li>
+        <li>Ground Pork</li>
+        <li>Olive Oil</li>
+        <li>Onion</li>
+        <li>Butter</li>
+        <li>Ground Veal</li>
+        <li>Parmigiano-Reggian</li>
+        <li>White Wine</li>
+        <li>Tomato Paste</li>
+        <li>Garlic</li>
+      </ul>
+
+    </aside>
+
+    <section>
+      <h2>Lasagna and Chocolate Cake</h2>
+
+      <h2>Tonight's Meal Info</h2>
+        <p> Tartine is the best bread I know of. French with a twist. The best lasagna that you can not mess up is from Mario for sure. <a href="https://en.wikipedia.org/wiki/Joanne_Chang">Joanne Chang</a>, went to Harvard and now makes desserts so of course they are good.</p>
+
+        <figure>
+          <img src="https://billbrady.files.wordpress.com/2010/03/07lasagna00132.jpg"/>
+        </figure>
+        <figcaption>Now doesn't that look tasty, <a href="https://en.wikipedia.org/wiki/Lasagne">Wikipedia Article</a></figcaption>
+
+        <h2>Directions</h2>
+          <ol class="directions">
+              <li> Make Ragu bolognese</li>
+              <li> Make Lasagna al Forno</li>
+              <li> Make Besciamella</li>
+              <li> Combine and Bake</li>
+          </ol>
+    </section>
+    <section id="reviews">
+  <h2>Reviews</h2>
+    <form id="review-form" action="/reviews" method="post">
+      <label for="name">Name</label>
+      <input id="name" type="text" name="name">
+
+
+      1<input type="radio" name="rating" value="1" checked>
+      2<input type="radio" name="rating" value="2">
+      3<input type="radio" name="rating" value="3">
+      4<input type="radio" name="rating" value="4">
+      5<input type="radio" name="rating" value="5">
+
+      <select id="expertise" name="expertise">
+        <option value="Select Cooking Expertise" disabled="true" selected="true">What is your cooking expertise?</option>
+
+        <option value="Sometimes Cook">Sometimes Cook</option>
+
+        <option value="Cook Everyday">Cook Everyday</option>
+
+        <option value="Hobby Cooker">Hobby Cooker</option>
+
+        <option value="Pro Chef">Pro Chef</option>
+      </select>
+
+      <label>
+        <textarea id="review" name="review" cols="40" rows="15"></textarea>
+      </label>
+
+      <input type="submit" value="Submit Review">
+    </form>
+</section>
+
+
+    <h3>Reviews</h3>
+
+    <footer>
+        <p>Orignal recipes from: Mario Batali, Chad Robertson, Joanne Chang</p>
+    </footer>
+  </body>
+</html>

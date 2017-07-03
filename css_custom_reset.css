@@ -1,0 +1,24 @@
+input[type="radio"] {
+  -webkit-apperance: none;
+  width: 27px;
+  height: :27px;
+  background-image: url(./stars.png);
+  outline: none;
+  cursor: pointer;
+
+}
+
+
+input[type="submit"] {
+  outline: none;
+  cursor: pointer;
+
+}
+
+ol li:nth-of-type(2n) {
+  background-color: whitesmoke;
+}
+
+input:last-child {
+    background-color: gold;
+}
