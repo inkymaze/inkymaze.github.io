@@ -2,6 +2,11 @@
 <html>
   <head>
     <title>Nick's Recipe</title>
+    <meta name="description" content="Simple recipe for a great dinner.">
+<meta charset="utf-8">
+<link rel="stylesheet" href="./css_custom_reset.css" type="text/css"/>
+<link rel="stylesheet" href="./box_model.css" type="text/css"/>
+<script src="./external_javascript_example.js" type="text/javascript"></script>
   </head>
   <body>
     <header>
@@ -18,7 +23,7 @@
     <aside>
       <h2> Ingredients </h2>
 
-      <ul>
+      <ul class="ingredients-list">
         <li>Flour</li>
         <li>Salt</li>
         <li>Eggs</li>
@@ -54,14 +59,48 @@
         <figcaption>Now doesn't that look tasty, <a href="https://en.wikipedia.org/wiki/Lasagne">Wikipedia Article</a></figcaption>
 
         <h2>Directions</h2>
-          <ol>
+          <ol class="directions">
               <li> Make Ragu bolognese</li>
               <li> Make Lasagna al Forno</li>
               <li> Make Besciamella</li>
               <li> Combine and Bake</li>
           </ol>
     </section>
+    <section id="reviews">
+  <h2>Reviews</h2>
+    <form id="review-form" action="/reviews" method="post">
+      <label for="name">Name</label>
+      <input id="name" type="text" name="name">
 
+
+      1<input type="radio" name="rating" value="1" checked>
+      2<input type="radio" name="rating" value="2">
+      3<input type="radio" name="rating" value="3">
+      4<input type="radio" name="rating" value="4">
+      5<input type="radio" name="rating" value="5">
+
+      <select id="expertise" name="expertise">
+        <option value="Select Cooking Expertise" disabled="true" selected="true">What is your cooking expertise?</option>
+
+        <option value="Sometimes Cook">Sometimes Cook</option>
+
+        <option value="Cook Everyday">Cook Everyday</option>
+
+        <option value="Hobby Cooker">Hobby Cooker</option>
+
+        <option value="Pro Chef">Pro Chef</option>
+      </select>
+
+      <label>
+        <textarea id="review" name="review" cols="40" rows="15"></textarea>
+      </label>
+
+      <input type="submit" value="Submit Review">
+    </form>
+</section>
+
+
+    <h3>Reviews</h3>
 
     <footer>
         <p>Orignal recipes from: Mario Batali, Chad Robertson, Joanne Chang</p>
